@@ -100,7 +100,7 @@ const Header = () => {
                         {login && (
                             <div 
                             onClick={() => setLogin(!login)}
-                            className='absolute z-10 right-4 top-20 md:right-80 hover:cursor-pointer'>
+                            className='absolute z-30 right-4 lg:top-20 top-0 right-0 md:right-80 hover:cursor-pointer'>
                                 <FaTimes
                                 className='bg-green-400 rounded-lg' size={45} />
                             </div>
@@ -108,7 +108,7 @@ const Header = () => {
 
                     <div
                         onClick={() => setMenu(!menu)}
-                        className="lg:hidden cursor-pointer scale-105 duration-300 z-20"
+                        className="lg:hidden cursor-pointer scale-105 duration-300 lg:z-20 z-10"
                     >
                         {menu ? <FaTimes size={35} /> : <FaBars size={35} />}
                     </div>
@@ -140,8 +140,8 @@ const Header = () => {
 
           {/* Login and Signup page  */}
           {login && (
-            <div className='w-full h-screen flex items-center justify-center absolute top-10 uppercase'>
-              <div className='bg-violet-950 lg:w-2/5 w-full px-6 lg:px-0 h-fit flex flex-col gap-14 pb-12'>
+            <div className='w-full h-screen flex items-center justify-center absolute lg:top-10 top-0 uppercase z-20'>
+              <div className='bg-violet-950 lg:w-2/5 w-full px-6 lg:px-0 h-screen lg:h-fit flex flex-col gap-14 pb-12'>
 
                 <div className='flex justify-between text-2xl md:text-3xl font-black items-center border-b border-b-blue-800'>
                     <NavLink
