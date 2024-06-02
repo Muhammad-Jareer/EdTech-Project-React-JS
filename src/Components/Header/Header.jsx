@@ -100,7 +100,7 @@ const Header = () => {
                         {login && (
                             <div 
                             onClick={() => setLogin(!login)}
-                            className='absolute z-30 right-4 lg:top-20 top-0 right-0 md:right-80 hover:cursor-pointer'>
+                            className='absolute z-30 md:right-4 lg:top-20 top-0 right-0 md:right-80 hover:cursor-pointer'>
                                 <FaTimes
                                 className='bg-green-400 rounded-lg' size={45} />
                             </div>
